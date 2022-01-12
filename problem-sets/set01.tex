@@ -3,10 +3,6 @@
 \author{Jim Fowler}
 \input{preamble}
 
-\usepackage{draftwatermark}
-\SetWatermarkText{Draft}
-\SetWatermarkScale{5}
-
 \begin{document}
 \maketitle
 
@@ -18,25 +14,63 @@
 \section{Terminology}
 
 \begin{problem}
-  Define something.
+  Define $H_n(X,A;G)$.
+\end{problem}
+
+\begin{problem}
+ Define  
+  $H^n(X;G)$.
+\end{problem}
+
+\begin{problem}
+  For a homeomorphism $f : X \to X$, define the mapping torus $M_f$.
 \end{problem}
 
 \section{Numericals}
 
+\begin{problem} Let $T^2 := S^1 \times S^1$.  Then for a matrix $A \in
+\GL_2(\Z)$, define a map $f_A : T^2 \to T^2$ and compute the homology
+of $M_f$.
+\end{problem}
+
 \begin{problem}
-  Compute something.
+  Compute $H_\star(\RP^2;\Z)$ and $H^\star(\RP^2;\Z)$.  Are they the same?
 \end{problem}
 
 \section{Exploration}
 
 \begin{problem}
-  Explore something.
+  Is it the case that $H_n(X;G) = H_n(X;\Z) \otimes G$?
+\end{problem}
+
+\begin{problem}
+  Consider the simplicial graph $X$ with a vertex $a_i$ and $b_i$ for each $i \in \Z$, and edges
+  \begin{itemize}
+  \item between $a_k$ and $a_{k+1}$,
+  \item between $b_k$ and $b_{k+1}$,
+  \item between $a_k$ and $b_k$, for each $k \in \Z$.
+  \end{itemize} Compute $H^\star(X;\Z)$ and $H^\star(X;\Z)$.  Are they
+torsion-free?  Are they the same?
 \end{problem}
 
 \section{Prove or Disprove and Salvage if Possible (PODASIP)}
 
-\begin{problem}
-  Something that may be wrong.
+\textit{You may not have met these PODASIP-style problems before.
+  What follows are statements which may be ``true'' or ``false.''  If
+  the statement is true, you must provide a proof.  If the statement
+  is false, explain why it is false, then fix the statement and
+  finally supply a proof for the repaired statement.}
+
+\begin{problem} If the CW complex $X$ only has cells in even
+dimensions, then its homology groups $H_n(X)$ are torsion-free.
+\end{problem}
+
+\begin{problem} Suppose $0 \to A \to B \to C \to 0$ is an exact
+sequence of abelian groups.  Then for an abelian group $G$, the
+sequence
+  \[
+    0 \to A \otimes G \to B \otimes G \to C \otimes G \to 0
+    \] is exact.
 \end{problem}
 
 \end{document}
