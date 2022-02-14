@@ -3,40 +3,98 @@
 \author{Jim Fowler}
 \input{preamble}
 
-\usepackage{draftwatermark}
-\SetWatermarkText{Draft}
-\SetWatermarkScale{5}
-
 \begin{document}
 \maketitle
 
 \begin{inspiration}
-  Some words
-  \byline{A Person}
+  If I could only understand the beautiful consequence \\ following from the concise proposition $d^2 = 0$.
+  \byline{Henri Cartan}
 \end{inspiration}
 
 \section{Terminology}
 
 \begin{problem}
-  Define something.
+  For $\varphi \in H^k(X)$ and $\psi \in H^\ell(X)$, define the cup product $\varphi \cupp \psi \in H^{k + \ell}(X)$.
 \end{problem}
 
 \section{Numericals}
 
 \begin{problem}
-  Compute something.
+ For the orientable genus $g$ surface $\Sigma_g$, compute $H^\star(\Sigma_g)$ as a ring.
 \end{problem}
+
+\begin{problem}
+ Compute $H^\star(S^2 \wedge S^4)$ as a ring.
+\end{problem}
+
+\begin{problem} Define $\epsilon_n := (-1)^{n \cdot (n+1)/2}$ and
+verify $\epsilon_{i+j} = (-1)^{ij} \epsilon_i \epsilon_j$.
+\end{problem}
+
+% \begin{problem}
+%   Consider $X \times I$ as a simplicial complex; in particular, for
+%   $\Delta^n \times I$,
+%   \begin{align*}
+%     [v_0,\ldots,v_n] &= \Delta^n \times \{0\} \\
+%     [w_0,\ldots,w_n] &= \Delta^n \times \{1\} \\
+%     \Delta^n \times I &= \bigcup [v_0,\ldots,v_i,w_n,\ldots,w_i].
+%     \end{align*}
+%     Draw a picture to illustrate the resulting simplicial structure on the prism $\Delta^2 \times I$.
+% \end{problem}
 
 \section{Exploration}
 
 \begin{problem}
-  Explore something.
+Let $\tau : C_n(X) \to C_n(X)$ be the chain map which, on a simplex $\sigma$, is defined as
+\[
+\tau(\sigma) = \epsilon_n (\sigma \circ \mathrm{reverse}),
+\]
+where $\mathrm{reverse}$ is the affine map $[v_0,\ldots,v_n] \to
+[v_n,\ldots,v_0]$.
+
+Is $\tau$ a chain map?
+\end{problem}
+
+\begin{problem}
+  Verify $\tau^\star \alpha \cupp \tau^\star \beta = \pm
+  \,\tau^\star(\beta \cupp \alpha)$.
+
+  Determine the sign.
+\end{problem}
+
+
+\begin{problem}
+ Recall the \textbf{prism
+    operator} $P : C_n(X) \to C_{n+1}(X)$ defined via
+  \[
+  P(\sigma) = \sum_i (-1)^i \epsilon_{n-i} (\sigma \circ \projection)
+  |_{[v_0,\ldots,v_i,w_n,\ldots, w_i]},
+  \]
+  where $\mathrm{proj}$ is the projection $\Delta^n \times I \to \Delta^n$.
+
+  Show that $\partial \circ P + P \circ \partial = \tau - \mathrm{Id}$.
+\end{problem}
+
+\begin{problem} Describe a four-fold covering map $f : \Sigma_5 \to
+  \Sigma_2$.
+
+  Then describe $f^\star : H^\star(\Sigma_2) \to H^\star(\Sigma_5)$ as a ring homomorphism.
 \end{problem}
 
 \section{Prove or Disprove and Salvage if Possible (PODASIP)}
 
 \begin{problem}
-  Something that may be wrong.
+  For $\varphi \in H^k(X)$ and $\psi \in H^\ell(X)$, we have \(\varphi \cupp \psi = \psi \cupp \varphi\).
 \end{problem}
 
+\begin{problem} If $f : \Sigma_i \to \Sigma_j$ and $g :
+\Sigma_j \to \Sigma_i$ and $g \circ f = \id_{\Sigma_i}$ then $i =
+j$.
+\end{problem}
+
+
 \end{document}
+
+
+
+
