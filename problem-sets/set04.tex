@@ -3,40 +3,61 @@
 \author{Jim Fowler}
 \input{preamble}
 
-\usepackage{draftwatermark}
-\SetWatermarkText{Draft}
-\SetWatermarkScale{5}
-
 \begin{document}
 \maketitle
 
-\begin{inspiration}
-  Some words
-  \byline{A Person}
+\begin{inspiration} % page 212, Notices of the AMS, Volume 56, Number 2
+Some mathematicians are birds, others are frogs\ldots Mathematics needs both birds and frogs.
+\byline{Freeman Dyson}
 \end{inspiration}
 
 \section{Terminology}
 
 \begin{problem}
-  Define something.
+  What is the suspension $\Sigma X$ of a space X?
+\end{problem}
+
+\begin{problem}
+  What is the \textbf{Hilbert--Poincar\'e series} of a graded vector space?  
 \end{problem}
 
 \section{Numericals}
 
 \begin{problem}
-  Compute something.
+Compute the Hilbert--Poincar\'e series of $H^\star(\CP^n \times \CP^m ; \mathbb{Q})$.
 \end{problem}
 
 \section{Exploration}
 
+\begin{problem} Let $\alpha$ denote a generator of $H^1(S^1)$.  For a
+finite CW complex $X$ and a class $\omega \in H^1(X)$, show that there
+is a map $f : X \to S^1$ so that $\omega = f^\star(\alpha)$.
+\end{problem}
+
 \begin{problem}
-  Explore something.
+  Conclude that if $\omega \in H^1(X)$, then $\omega \smile \omega = 0$.
+  
+  This is an example of reasoning by the ``univeral example'' of $S^1$.
+\end{problem}
+
+\begin{problem}
+  Use the short exact sequence
+  \[
+    0 \to \Z/2\Z \to \Z/4\Z \to \Z/2\Z \to 0
+  \]
+  to produce a map $\beta : H^\star(X;\Z/2) \to H^{\star + 1}(X ; \Z/2)$.  This is a \textbf{Bockstein homomorphism}.
 \end{problem}
 
 \section{Prove or Disprove and Salvage if Possible (PODASIP)}
 
 \begin{problem}
-  Something that may be wrong.
+  The Bockstein $\beta : H^\star(\RP^\infty ; \Z/2\Z) \to H^{\star + 1}(\RP^\infty ; \Z/2\Z)$ vanishes.
+\end{problem}
+
+\begin{problem} % only for positive-degree classes
+If $\omega, \eta \in H^\star(\Sigma X)$ then $\omega \smile \eta = 0$.
+
+\textit{Hint:} consider \textit{relative} cup products.
 \end{problem}
 
 \end{document}
