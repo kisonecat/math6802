@@ -3,40 +3,70 @@
 \author{Jim Fowler}
 \input{preamble}
 
-\usepackage{draftwatermark}
-\SetWatermarkText{Draft}
-\SetWatermarkScale{5}
+\newcommand{\Q}{\mathbb{Q}}
 
 \begin{document}
 \maketitle
 
-\begin{inspiration}
-  Some words
-  \byline{A Person}
+\begin{inspiration} Without fantasy one would never become a
+mathematician, and what gave me a place among the mathematicians was
+the audacity of my thinking. \byline{Sophus Lie}
 \end{inspiration}
 
 \section{Terminology}
 
-\begin{problem}
-  Define something.
+\begin{problem} For a cycle $\sigma \in H_k(X)$ and a cocycle $\varphi \in H^\ell(X)$, define the cap product $\sigma \smallfrown \varphi$.
+\end{problem}
+
+\begin{problem} For oriented closed $n$-manifolds $M$ and $N$, what is
+the \textbf{degree} of a map $f : M \to N$?
 \end{problem}
 
 \section{Numericals}
 
-\begin{problem}
-  Compute something.
+\begin{problem} Let $\Sigma_2$ be the orientable genus two surface,
+and $[\Sigma_2] \in H_2(\Sigma_2)$ a fundamental class. Compute the
+map $[\Sigma_2] \smallfrown - : H^1(\Sigma_2) \to H_1(\Sigma_2)$ and
+verify that is an isomorphism.
 \end{problem}
 
 \section{Exploration}
 
+\begin{problem} Compute $H^\star(\CP^n)$ as a ring.  \textit{Hint:}
+invoke Poincar\'e duality to make this much easier than the direct
+computation we sketched in lecture.
+\end{problem}
+
+\begin{problem} An oriented closed connected manifold is
+\textbf{flexible} if it admits a self-map that has degree not zero or
+$\pm 1$.  Show that $S^k$ and $\CP^k$ and any products of such are
+flexible.
+\end{problem}
+
 \begin{problem}
-  Explore something.
+  For a connected closed orientable $4k$-manifold $M$, explain why the cup product map
+  \[
+    \smallsmile : H^{2k}(M;\Q) \otimes 
+    H^{2k}(M;\Q) \to H^{4k}(M;\Q) \cong \Q
+  \]
+  is a nondegenerate symmetric bilinear form.
+
+  Define the signature $\sigma(M)$ to be the signature of the cup
+product pairing on cohomology in the middle dimension.
 \end{problem}
 
 \section{Prove or Disprove and Salvage if Possible (PODASIP)}
 
+\begin{problem} % missing compactness assumption
+  The Euler characteristic of an odd-dimensional manifold vanishes.
+\end{problem}
+
 \begin{problem}
-  Something that may be wrong.
+  For an integer $n \in \Z$, there exists a connected closed oriented 4-manifold $M$ with $\chi(M) = n$.
+\end{problem}
+
+\begin{problem}
+  For an integer $n \in \Z$, there exists a connected closed oriented 4-manifold $M$ with $\sigma(M) = n$.
 \end{problem}
 
 \end{document}
