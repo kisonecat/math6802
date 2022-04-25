@@ -3,40 +3,79 @@
 \author{Jim Fowler}
 \input{preamble}
 
-\usepackage{draftwatermark}
-\SetWatermarkText{Draft}
-\SetWatermarkScale{5}
-
 \begin{document}
 \maketitle
 
 \begin{inspiration}
-  Some words
-  \byline{A Person}
+  With our mid-course correction, this is our the final exam --- and it is due May 3 at noon.
+  \byline{Jim Fowler}
 \end{inspiration}
 
 \section{Terminology}
 
 \begin{problem}
-  Define something.
+  What is a Hopf algebra?  (You have some choices here!)
+\end{problem}
+
+\begin{problem}
+ What is a homology sphere? 
 \end{problem}
 
 \section{Numericals}
 
 \begin{problem}
-  Compute something.
+  Compute $H_n(\CP^n \times \CP^m; \Z)$.
+\end{problem}
+
+\begin{problem}
+  For a compact contractible manifold $M^n$, compute $H_n(\partial M)$.
 \end{problem}
 
 \section{Exploration}
 
+\begin{problem} Let $M$ be a closed $n$-manifold which is a
+homology sphere, and define $\ddot{M}$ to be $M$ with two points
+removed.
+
+  Compute
+  $H_\star(\ddot{M})$,
+  $H^\star(\ddot{M})$, and
+  $H_c^\star(\ddot{M})$.
+\end{problem}
+
 \begin{problem}
-  Explore something.
+  Sometimes manifolds have finite covers which are homeomorphic to the
+  original manifolds, e.g., $S^1$ or the $n$-torus.
+
+  Is it possible that a closed manifold $M^n$ has an infinite-sheeted
+  cover which is homotopy equivalent to itself?
+\end{problem}
+
+\begin{problem}
+  Let $\Sigma_2$ be the closed surface of genus~$2$; find a map $f :
+  \Sigma_2 \to \Sigma_2$ which is not homotopic to the identity, but
+  for which $f^\star : H^\star(\Sigma_2) \to H^\star(\Sigma_2)$ is the
+  identity.  This is an element of the \textbf{Torelli group}.
 \end{problem}
 
 \section{Prove or Disprove and Salvage if Possible (PODASIP)}
 
 \begin{problem}
-  Something that may be wrong.
+  A manifold does not retract onto its boundary.
 \end{problem}
+
+\begin{problem}
+  For a finite CW complex $X$, write
+  $H^{\mbox{\scriptsize free}}_n(X)$ and 
+  $H^{\mbox{\scriptsize tors}}_n(X)$ for the free and torsion pieces of $H_n(X)$, respectively.
+  Then $H^n(X) \cong  
+  H^{\mbox{\scriptsize free}}_n(X) \oplus
+  H^{\mbox{\scriptsize tors}}_n(X)$.
+\end{problem}
+
+\begin{problem}
+  For a space $X$, the first cohomology group $H^1(X)$ is torsion-free.
+  \end{problem}
+
 
 \end{document}
